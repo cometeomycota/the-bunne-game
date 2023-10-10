@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnCarrot()
     {
         int FoodIndex = Random.Range(0, FoodPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 1, spawnPosZ);
         Instantiate(FoodPrefabs[FoodIndex], spawnPos, FoodPrefabs[FoodIndex].transform.rotation);
     }
 }
